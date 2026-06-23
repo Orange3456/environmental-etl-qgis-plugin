@@ -5,6 +5,11 @@ Author: Praveenkumar Saminathan
 Supervisor: Prof. Lorenzo Gianquintieri
 Politecnico di Milano | MSc Geoinformatics Engineering | 2025-2026
 
+This plugin was developed as part of an MSc thesis in Geoinformatics Engineering
+at Politecnico di Milano (2025-2026), supervised by Prof. Lorenzo Gianquintieri.
+
+Repository: https://github.com/Orange3456/environmental-etl-qgis-plugin
+
 ---
 
 ## WHAT THIS PLUGIN DOES
@@ -35,7 +40,6 @@ CDS API key setup:
   3. Create a file at C:\Users\YourName\.cdsapirc (Windows)
      or ~/.cdsapirc (Mac/Linux)
   4. Paste the following into that file:
-
      url: https://cds.climate.copernicus.eu/api/v2
      key: YOUR-UID:YOUR-API-KEY
 
@@ -173,8 +177,8 @@ named: ERA5_{variable}_{shapefile_name}
 ## RUNTIME ESTIMATES
 
 Runtime scales approximately linearly with polygon count.
-Expected processing time per run (Option A, single time step):
 
+Expected processing time per run (Option A, single time step):
   ~30 seconds per polygon
   30 polygons  -> ~15 minutes
   36 polygons  -> ~18 minutes
@@ -231,9 +235,13 @@ provided the same CDS API version is used.
 ## CONTACT
 
 Author: Praveenkumar Saminathan
-Email:  praveennathan10@gmail.com
-Portfolio: https://orange3456.github.io/praveenkumar-saminathan.github.io/
-
+Email:  praveennathan10@gmail.com / praveenkumar.saminathan@mail.polimi.it
 Supervisor: Prof. Lorenzo Gianquintieri
 Department of Electronics, Information and Bioengineering (DEIB)
 Politecnico di Milano
+
+---
+
+## License
+
+This project is licensed under the GNU General Public License v2.0 - see the [LICENSE](LICENSE) file for details.
