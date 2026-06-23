@@ -2,6 +2,7 @@
 ## README - How to Use the Plugin
 
 Author: Praveenkumar Saminathan | Supervisor: Prof. Lorenzo Gianquintieri
+
 Politecnico di Milano | MSc Geoinformatics Engineering | 2025-2026
 
 This plugin was developed as part of an MSc thesis in Geoinformatics Engineering
