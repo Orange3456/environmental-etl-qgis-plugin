@@ -1,19 +1,18 @@
 # This file contains metadata for your plugin.
-
 # This file should be included when you package your plugin.# Mandatory items:
 
 [general]
 name=EnvironmentalETL
 qgisMinimumVersion=3.0
 description=Environmental exposure ETL plugin
-version=0.1
+version=1.0
 author=Praveenkumar Saminathan
 email=praveennathan10@gmail.com
 
-about=A QGIS plugin to automate the extraction, transformation, and aggregation of environmental exposure data (e.g., ERA5 meteorological variables) over user-defined geographical subdivisions, producing analysis-ready tabular outputs for environmental epidemiology studies.
+about=A QGIS plugin to automate the extraction, transformation, and aggregation of environmental exposure data (e.g., ERA5 meteorological variables) over user-defined geographical subdivisions, producing analysis-ready tabular outputs for environmental epidemiology studies. Developed as part of an MSc thesis in Geoinformatics Engineering at Politecnico di Milano.
 
-tracker=http://bugs
-repository=http://repo
+tracker=https://github.com/Orange3456/environmental-etl-qgis-plugin/issues
+repository=https://github.com/Orange3456/environmental-etl-qgis-plugin
 # End of mandatory metadata
 
 # Recommended items:
@@ -23,10 +22,9 @@ hasProcessingProvider=no
 # changelog=
 
 # Tags are comma separated with spaces allowed
-tags=python, qgis, etl, environmental, era5
+tags=python, qgis, etl, environmental, era5, climate, copernicus
 
-
-homepage=http://homepage
+homepage=https://github.com/Orange3456/environmental-etl-qgis-plugin
 category=Plugins
 icon=icon.png
 # experimental flag
@@ -40,9 +38,7 @@ deprecated=False
 # Check the documentation for more information.
 # plugin_dependencies=
 
-Category of the plugin: Raster, Vector, Database or Web
 # category=
 
 # If the plugin can run on QGIS Server.
 server=False
-
