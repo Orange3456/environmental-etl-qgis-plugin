@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EnvironmentalETL</class>
+ <widget class="QDialog" name="EnvironmentalETL">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>360</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+
+  <widget class="QLabel" name="labelLayer">
+   <property name="geometry">
+    <rect><x>30</x><y>4</y><width>200</width><height>16</height></rect>
+   </property>
+   <property name="text"><string>Polygon Layer</string></property>
+  </widget>
+  <widget class="QComboBox" name="comboLayer">
+   <property name="geometry">
+    <rect><x>30</x><y>20</y><width>301</width><height>22</height></rect>
+   </property>
+  </widget>
+
+  <widget class="QLabel" name="labelDateFrom">
+   <property name="geometry">
+    <rect><x>30</x><y>49</y><width>110</width><height>16</height></rect>
+   </property>
+   <property name="text"><string>Date From</string></property>
+  </widget>
+  <widget class="QDateEdit" name="dateFrom">
+   <property name="geometry">
+    <rect><x>30</x><y>65</y><width>110</width><height>22</height></rect>
+   </property>
+  </widget>
+
+  <widget class="QLabel" name="labelDateTo">
+   <property name="geometry">
+    <rect><x>30</x><y>94</y><width>110</width><height>16</height></rect>
+   </property>
+   <property name="text"><string>Date To</string></property>
+  </widget>
+  <widget class="QDateEdit" name="dateTo">
+   <property name="geometry">
+    <rect><x>30</x><y>110</y><width>110</width><height>22</height></rect>
+   </property>
+  </widget>
+
+  <widget class="QLabel" name="labelTime">
+   <property name="geometry">
+    <rect><x>30</x><y>139</y><width>160</width><height>16</height></rect>
+   </property>
+   <property name="text"><string>Option A - Single Time Step</string></property>
+  </widget>
+  <widget class="QComboBox" name="comboTime">
+   <property name="geometry">
+    <rect><x>30</x><y>158</y><width>101</width><height>22</height></rect>
+   </property>
+  </widget>
+
+  <widget class="QLabel" name="labelDailyStat">
+   <property name="geometry">
+    <rect><x>220</x><y>139</y><width>210</width><height>16</height></rect>
+   </property>
+   <property name="text"><string>Option B - Daily Min / Max / Mean</string></property>
+  </widget>
+  <widget class="QComboBox" name="comboDailyStat">
+   <property name="geometry">
+    <rect><x>220</x><y>158</y><width>150</width><height>22</height></rect>
+   </property>
+  </widget>
+
+  <widget class="QLabel" name="labelVariable">
+   <property name="geometry">
+    <rect><x>30</x><y>190</y><width>161</width><height>16</height></rect>
+   </property>
+   <property name="text"><string>ERA5 Variable</string></property>
+  </widget>
+  <widget class="QComboBox" name="comboVariable">
+   <property name="geometry">
+    <rect><x>30</x><y>206</y><width>161</width><height>21</height></rect>
+   </property>
+  </widget>
+
+  <widget class="QLabel" name="labelMethod">
+   <property name="geometry">
+    <rect><x>30</x><y>234</y><width>161</width><height>16</height></rect>
+   </property>
+   <property name="text"><string>Aggregation Method</string></property>
+  </widget>
+  <widget class="QComboBox" name="comboMethod">
+   <property name="geometry">
+    <rect><x>30</x><y>250</y><width>161</width><height>22</height></rect>
+   </property>
+  </widget>
+
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect><x>90</x><y>310</y><width>341</width><height>32</height></rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>EnvironmentalETL</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel"><x>248</x><y>254</y></hint>
+    <hint type="destinationlabel"><x>157</x><y>274</y></hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>EnvironmentalETL</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel"><x>316</x><y>260</y></hint>
+    <hint type="destinationlabel"><x>286</x><y>274</y></hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
